@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "table of contents.md",
+                "file": "00 table of contents.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
+                "file": "strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "strings.md"
               }
             }
           }
@@ -151,6 +151,15 @@
   },
   "active": "7056ee584e5259c1",
   "lastOpenFiles": [
-    "table of contents.md"
+    "operators.md",
+    "template strings.md",
+    "00 table of contents.md",
+    "functions.md",
+    "conditions.md",
+    "numbers.md",
+    "parseInt.md",
+    "strings.md",
+    "substring.md",
+    "substring(indexStart, indexEnd).md"
   ]
 }
