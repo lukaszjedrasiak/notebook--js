@@ -5,6 +5,15 @@ function sum(x, y) {
 }
 ```
 
+Function with default parameters
+```javascript
+function sum(x = 0, y = 0) {
+    return x + y;
+}
+```
+
+[[arrow functions]]
+
 ### Returning booleans
 Standard shape
 ```javascript
@@ -23,3 +32,5 @@ function isPassing(grade) {
     return grade >= 10;
 }
 ```
+
+[[functions callbacks]]

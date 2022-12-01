@@ -8,7 +8,12 @@
 - .toUpperCase();
 - [.substring()](substring)
 - [.parseInt()](parseInt)
-- 
+- [.trim()](trim)
+- [.startsWith() / endsWith()](startsWith_endsWith.md)
+- [.includes()](includes)
+- [.split()](split)
+- [replace()](replace)
+- [replaceAll()](replaceAll)
 
 ## Character access
 Square bracket syntax
