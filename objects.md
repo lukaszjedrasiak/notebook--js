@@ -67,3 +67,6 @@ console.log({x}); // x: 0
 [Object.keys()](object-keys)
 [Object.values()](object-values)
 [Object.entries()](object-entries)
+
+[optional chaining](optional-chaining)
+[nullish coalesing](nullish-coalescing)

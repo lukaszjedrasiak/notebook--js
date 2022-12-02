@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "objects.md",
+                "file": "nullish-coalescing.md",
                 "mode": "source",
                 "source": true
               }
             },
-            "group": "6fd6e7e2a118465d"
+            "group": "f545c865a90d6f00"
           },
           {
             "id": "df038b0c1d23e2db",
@@ -33,8 +33,7 @@
             },
             "group": "8262534dee930013"
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "f6ac2623327ae5ae",
@@ -46,12 +45,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "objects.md",
+                "file": "nullish-coalescing.md",
                 "mode": "preview",
                 "source": true
               }
             },
-            "group": "6fd6e7e2a118465d"
+            "group": "f545c865a90d6f00"
           },
           {
             "id": "60ddc1a835ba64f6",
@@ -66,8 +65,7 @@
             },
             "group": "8262534dee930013"
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +131,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concatenation.md",
+                "file": "nullish-coalescing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concatenation.md",
+                "file": "nullish-coalescing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concatenation.md"
+                "file": "nullish-coalescing.md"
               }
             }
           }
@@ -184,17 +182,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "60ddc1a835ba64f6",
+  "active": "f1bce8c37f2136f0",
   "lastOpenFiles": [
+    "objects.md",
+    "optional-chaining.md",
+    "concatenation.md",
     "arrays.md",
     "destructuring.md",
-    "objects.md",
     "00 table of contents.md",
-    "concatenation.md",
     "object-keys.md",
     "object-entries.md",
     "object-values.md",
-    "obiect-keys.md",
-    "map.md"
+    "obiect-keys.md"
   ]
 }
