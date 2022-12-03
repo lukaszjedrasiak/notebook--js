@@ -7,4 +7,7 @@
 [[arrays]]
 [[objects]]
 
+# Misc
+[falsy values](falsy-values)
+
 

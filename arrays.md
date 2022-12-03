@@ -57,5 +57,7 @@ array.at(-1) //get last element
 array.length = 0;
 ```
 
+# misc
 [[destructuring]]
 [[concatenation]]
+[array of objects](array-of-objects)

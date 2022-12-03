@@ -182,17 +182,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f1bce8c37f2136f0",
+  "active": "35f969c6e464b6bb",
   "lastOpenFiles": [
+    "array-of-objects.md",
+    "arrays.md",
+    "reduce.md",
+    "00 table of contents.md",
+    "falsy-values.md",
+    "nullish-coalescing.md",
     "objects.md",
     "optional-chaining.md",
     "concatenation.md",
-    "arrays.md",
-    "destructuring.md",
-    "00 table of contents.md",
-    "object-keys.md",
-    "object-entries.md",
-    "object-values.md",
-    "obiect-keys.md"
+    "destructuring.md"
   ]
 }
