@@ -70,3 +70,5 @@ console.log({x}); // x: 0
 
 [optional chaining](optional-chaining)
 [nullish coalesing](nullish-coalescing)
+
+[[immutability]]

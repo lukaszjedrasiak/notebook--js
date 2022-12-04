@@ -1,3 +1,4 @@
+[[syntax]]
 [[functions]]
 [[strings]]
 [[comments]]
@@ -9,5 +10,7 @@
 
 # Misc
 [falsy values](falsy-values)
+[[immutability]]
+
 
 

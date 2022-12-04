@@ -1,4 +1,9 @@
 {
   "livePreview": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheckLanguages": [
+    "pl",
+    "en-GB"
+  ],
+  "spellcheck": true
 }
