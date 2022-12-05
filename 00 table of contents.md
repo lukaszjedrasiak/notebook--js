@@ -7,6 +7,7 @@
 [[conditions]]
 [[arrays]]
 [[objects]]
+[[classes]]
 
 # Misc
 [falsy values](falsy-values)

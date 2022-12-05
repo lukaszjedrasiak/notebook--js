@@ -11,8 +11,12 @@
             "id": "35f969c6e464b6bb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "objects.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "objects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "objects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "objects.md"
+              }
             }
           }
         ]
@@ -129,15 +137,15 @@
   },
   "active": "35f969c6e464b6bb",
   "lastOpenFiles": [
+    "instances.md",
+    "classes.md",
+    "00 table of contents.md",
     "array-of-objects.md",
     "arrays.md",
     "immutability.md",
     "shallow-copy.md",
     "objects.md",
     "object-keys.md",
-    "object-entries.md",
-    "map.md",
-    "00 table of contents.md",
-    "splice.md"
+    "object-entries.md"
   ]
 }
