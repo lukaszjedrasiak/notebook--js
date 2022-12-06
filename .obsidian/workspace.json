@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "objects.md",
+                "file": "class inheritance.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1162b05117ffcd01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "reduce.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a8d58f4cb3393e83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "class inheritance.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "objects.md",
+                "file": "reduce.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "objects.md",
+                "file": "reduce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "objects.md"
+                "file": "reduce.md"
               }
             }
           }
@@ -135,17 +160,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "35f969c6e464b6bb",
+  "active": "1162b05117ffcd01",
   "lastOpenFiles": [
-    "instances.md",
-    "classes.md",
-    "00 table of contents.md",
-    "array-of-objects.md",
     "arrays.md",
-    "immutability.md",
-    "shallow-copy.md",
+    "super.md",
+    "class inheritance.md",
+    "classes.md",
+    "getters-setters.md",
+    "instances.md",
+    "static methods.md",
+    "methods chaining.md",
     "objects.md",
-    "object-keys.md",
-    "object-entries.md"
+    "00 table of contents.md"
   ]
 }

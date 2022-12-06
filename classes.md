@@ -13,3 +13,7 @@ const instance = new ClassName("parametr");
 ```
 
 [[instances]]
+[[getters-setters]]
+[[static methods]]
+[[methods chaining]]
+[[class inheritance]]
