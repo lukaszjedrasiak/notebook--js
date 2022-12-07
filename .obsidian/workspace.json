@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "reduce.md",
+                "file": "classes.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "fc7517358cbb683b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "prototypical inheritance.md",
                 "mode": "source",
                 "source": true
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "reduce.md",
+                "file": "classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "reduce.md",
+                "file": "classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "reduce.md"
+                "file": "classes.md"
               }
             }
           }
@@ -162,15 +174,15 @@
   },
   "active": "1162b05117ffcd01",
   "lastOpenFiles": [
+    "prototypical inheritance.md",
+    "classes.md",
+    "class inheritance.md",
+    "reduce.md",
     "arrays.md",
     "super.md",
-    "class inheritance.md",
-    "classes.md",
     "getters-setters.md",
     "instances.md",
     "static methods.md",
-    "methods chaining.md",
-    "objects.md",
-    "00 table of contents.md"
+    "methods chaining.md"
   ]
 }

@@ -4,5 +4,5 @@
   "spellcheckLanguages": [
     "en-GB"
   ],
-  "spellcheck": true
+  "spellcheck": false
 }
