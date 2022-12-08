@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "35f969c6e464b6bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "class inheritance.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "1162b05117ffcd01",
             "type": "leaf",
             "state": {
@@ -32,24 +20,12 @@
             }
           },
           {
-            "id": "fc7517358cbb683b",
+            "id": "354615c2f989d7ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prototypical inheritance.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a8d58f4cb3393e83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "class inheritance.md",
+                "file": "asynchronous callback.md",
                 "mode": "source",
                 "source": true
               }
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes.md",
+                "file": "asynchronous callback.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes.md",
+                "file": "asynchronous callback.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes.md"
+                "file": "asynchronous callback.md"
               }
             }
           }
@@ -172,17 +148,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "1162b05117ffcd01",
+  "active": "354615c2f989d7ac",
   "lastOpenFiles": [
-    "prototypical inheritance.md",
     "classes.md",
+    "private fields.md",
+    "public fields.md",
+    "super.md",
     "class inheritance.md",
+    "prototypical inheritance.md",
     "reduce.md",
     "arrays.md",
-    "super.md",
     "getters-setters.md",
-    "instances.md",
-    "static methods.md",
-    "methods chaining.md"
+    "instances.md"
   ]
 }

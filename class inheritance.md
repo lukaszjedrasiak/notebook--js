@@ -27,3 +27,4 @@ class Manager extends Employee {
 It is also possible to override methods in "child" classes.
 
 [[super]]
+[[prototypical inheritance]]

@@ -33,3 +33,8 @@ Rectangle.prototype.isSquare = function() {
 [[methods chaining]]
 [[class inheritance]]
 [[prototypical inheritance]]
+
+[[public fields]]
+[[private fields]]
+
+[[asynchronous callback]]
