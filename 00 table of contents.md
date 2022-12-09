@@ -8,6 +8,7 @@
 [[arrays]]
 [[objects]]
 [[classes]]
+[[promises]]
 
 # Misc
 [falsy values](falsy-values)

@@ -7,3 +7,6 @@ array.forEach(function(element) {
 ```
 
 JavaScript will take your callback function and call it for every single item in the array.
+
+[[asynchronous callback]]
+[[callback pattern]]

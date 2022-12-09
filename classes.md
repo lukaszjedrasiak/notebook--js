@@ -36,5 +36,3 @@ Rectangle.prototype.isSquare = function() {
 
 [[public fields]]
 [[private fields]]
-
-[[asynchronous callback]]
