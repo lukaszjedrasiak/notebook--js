@@ -38,3 +38,6 @@ fetchData('fromWhere')
 - A promise can have 3 states: `pending`, `fulfilled`, and `rejected`.
 - Every promise starts with the `pending` state and then becomes `fulfilled` when it has been completed successfully.
 - Promises let you run a callback sometime in the future when the promise has been completed successfully.
+
+[[creating promises]]
+[[rejecting promises]]

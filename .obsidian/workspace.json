@@ -11,28 +11,36 @@
             "id": "7729a86dc8a305f8",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "a82dce2317e5940a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "00 table of contents.md",
+                "file": "arrays.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "86b9535269fa890c",
+            "id": "2be50004fd120784",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "promises.md",
+                "file": "fetch.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "promises.md",
+                "file": "fetch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "promises.md",
+                "file": "fetch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,28 +146,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "promises.md"
+                "file": "fetch.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "86b9535269fa890c",
+  "active": "2be50004fd120784",
   "lastOpenFiles": [
-    "00 table of contents.md",
-    "callback pattern.md",
-    "functions callbacks.md",
-    "implicit return.md",
-    "asynchronous callback.md",
-    "functions.md",
-    "classes.md",
-    "private fields.md",
-    "public fields.md",
-    "super.md"
+    "arrays.md",
+    "every.md",
+    "splice.md",
+    "map.md",
+    "fetch.md",
+    "fetch api.md",
+    "json.md",
+    "json-stringify.md",
+    "json-parse.md",
+    "00 table of contents.md"
   ]
 }
