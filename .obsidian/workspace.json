@@ -8,27 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7729a86dc8a305f8",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "a82dce2317e5940a",
+            "id": "2be50004fd120784",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "arrays.md",
+                "file": "00 table of contents.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "2be50004fd120784",
+            "id": "29084f314a9be75a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,17 +148,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2be50004fd120784",
+  "active": "29084f314a9be75a",
   "lastOpenFiles": [
+    "fetch api.md",
+    "fetch.md",
+    "modules.md",
+    "00 table of contents.md",
     "arrays.md",
     "every.md",
     "splice.md",
     "map.md",
-    "fetch.md",
-    "fetch api.md",
     "json.md",
-    "json-stringify.md",
-    "json-parse.md",
-    "00 table of contents.md"
+    "json-stringify.md"
   ]
 }

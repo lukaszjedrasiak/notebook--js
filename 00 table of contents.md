@@ -10,6 +10,7 @@
 [[classes]]
 [[promises]]
 [[fetch api]]
+[[modules]]
 
 # Misc
 [falsy values](falsy-values)
