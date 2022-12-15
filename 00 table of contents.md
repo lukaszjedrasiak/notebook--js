@@ -11,6 +11,7 @@
 [[promises]]
 [[fetch api]]
 [[modules]]
+[[DOM]]
 
 # Misc
 [falsy values](falsy-values)
