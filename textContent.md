@@ -1,3 +1,4 @@
+`element.textContent` property returns the text, with all the HTML tags stripped out.
 ## Basic usage
 
 ```html
