@@ -1,6 +1,21 @@
 [element.textContent](textContent)
 [element.innerHTML](innerHTML)
 [element.value](value)
+[element.insertAdjacentHTML](insertAdjacentHTML)
+
+## creating elements
+
+```javascript
+const paragraph = document.createElement("p");
+paragraph.classList.add("text-center");
+paragraph.textContent = "Hello World";
+console.log(paragraph); // <p class="text-center">Hello World</p> (as an element not as a string)
+```
+
+Inserting element into DOM:
+```javascript
+document.body.appendChild(paragraph);
+```
 
 ## classes
 List of methods to dynamically add or remove classes **on** element.

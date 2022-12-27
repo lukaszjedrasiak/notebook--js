@@ -4,71 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d5201c17e2f10930",
+        "id": "6d9c04f3bbc2abb8",
         "type": "tabs",
         "children": [
           {
-            "id": "2be50004fd120784",
+            "id": "6aceca641fccca82",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "strings.md",
+                "file": "functions callbacks.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "1aa78f0385dc4ac7",
+            "id": "0f4973ffd0acaed4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "parseInt.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "016a31e30158e58f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "element.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "49c56c7a17c546e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "value.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a931e9dfc91bd5be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "innerHTML.md",
+                "file": "fetch.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "element.md",
+                "file": "fetch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "element.md",
+                "file": "fetch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "element.md"
+                "file": "fetch.md"
               }
             }
           }
@@ -185,17 +149,27 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "016a31e30158e58f",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0f4973ffd0acaed4",
   "lastOpenFiles": [
-    "parseInt.md",
-    "strings.md",
-    "00 table of contents.md",
+    "arrow functions.md",
+    "functions.md",
+    "fetch.md",
+    "fetch api.md",
+    "callback pattern.md",
+    "functions callbacks.md",
+    "events.md",
+    "every.md",
     "element.md",
-    "DOM.md",
-    "value.md",
-    "innerHTML.md",
-    "selection.md",
-    "textContent.md",
-    "classes.md"
+    "addEventListener.md"
   ]
 }

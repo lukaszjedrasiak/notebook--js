@@ -3,3 +3,4 @@ The DOM (Document Object Model) is a JavaScript object & API (a set of functions
 
 [[selection]]
 [[element]]
+[[events]]
