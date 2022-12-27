@@ -41,3 +41,4 @@ fetchData('fromWhere')
 
 [[creating promises]]
 [[rejecting promises]]
+[[fetch]]

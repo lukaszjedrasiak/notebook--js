@@ -3,7 +3,7 @@
 2. Syntax: `fetch("URL")`
 3. Fetch always returns [[promises]]
 
-## fetching json
+## fetching [[json]]
 So, because `fetch(URL)` returns a promise, we can resolve the promise with a .then(callback). This callback will run sometime in the future when the fetch request has been completed.
 
 ```js
@@ -57,6 +57,17 @@ function displayCompletedChapters(chapters) {
 
 // Sample usage - do not modify
 getChapters();
+```
+
+### fetching via [[async-await]]
+
+```js
+const api = async () => {
+    const response = await fetch('URL');
+    const data = await response.json();
+    console.log(data);
+    randomFunc(data.choosenField);
+}
 ```
 
 ## handling errors

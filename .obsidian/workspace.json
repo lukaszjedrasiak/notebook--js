@@ -4,35 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "6d9c04f3bbc2abb8",
+        "id": "e6f24029a1812bd3",
         "type": "tabs",
         "children": [
           {
-            "id": "6aceca641fccca82",
+            "id": "e6d1d9a7558919fb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "functions callbacks.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
-            "id": "0f4973ffd0acaed4",
+            "id": "57e47a906a90579a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fetch.md",
+                "file": "00 table of contents.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fetch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fetch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "fetch.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,17 +150,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f4973ffd0acaed4",
+  "active": "e6d1d9a7558919fb",
   "lastOpenFiles": [
-    "arrow functions.md",
-    "functions.md",
-    "fetch.md",
+    "modules.md",
+    "classes.md",
+    "class inheritance.md",
+    "prototypical inheritance.md",
+    "00 table of contents.md",
     "fetch api.md",
-    "callback pattern.md",
-    "functions callbacks.md",
-    "events.md",
-    "every.md",
-    "element.md",
-    "addEventListener.md"
+    "fetch.md",
+    "promises.md",
+    "functions.md",
+    "arrays.md"
   ]
 }
