@@ -11,6 +11,8 @@
 [[promises]]
 [[modules]]
 [[DOM]]
+[[package managers]]
+[[module bundlers]]
 
 # Misc
 [falsy values](falsy-values)

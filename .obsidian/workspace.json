@@ -11,14 +11,6 @@
             "id": "e6d1d9a7558919fb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "57e47a906a90579a",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "00 table of contents.md",
@@ -26,8 +18,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "8fa93c54c26bc0d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "module bundlers.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "module bundlers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "module bundlers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "module bundlers.md"
+              }
             }
           }
         ]
@@ -150,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e6d1d9a7558919fb",
+  "active": "8fa93c54c26bc0d3",
   "lastOpenFiles": [
+    "00 table of contents.md",
+    "npm.md",
+    "package managers.md",
     "modules.md",
     "classes.md",
     "class inheritance.md",
     "prototypical inheritance.md",
-    "00 table of contents.md",
     "fetch api.md",
     "fetch.md",
-    "promises.md",
-    "functions.md",
-    "arrays.md"
+    "promises.md"
   ]
 }
