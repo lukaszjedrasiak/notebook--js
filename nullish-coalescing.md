@@ -1,3 +1,7 @@
+> ** TO DO **
+> learn more about optional chaining in iterations via arrays
+> i.e.: `data.documents?.forEach(item => ...`
+
 It allows to assign default value, if the left-hand variable has `null` or `undefined` state.
 
 ```javascript
@@ -21,3 +25,4 @@ Nullish coalescing has lower precedence than such operators like `+` or `-`. So 
 ```javascript
 const result = 2 + (user.age ?? 18);
 ```
+

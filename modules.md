@@ -53,5 +53,62 @@ const isEvenNumber = number => {
 }
 ```
 
+[[module bundlers]]
+[[package managers]]
+
 ### Importing from library
-To be done later
+[[libraries]]
+
+Install module
+```bash
+npm install lodash-es
+```
+
+Import all library:
+```javascript
+// 👎 NOT recommended
+import _ from "lodash-es";
+```
+
+Import selected functions:
+```javascript
+// 👍 recommended
+import {debounce} from "lodash-es";
+```
+
+### dynamic import
+
+IMPORTANT! The importet modules are visible and can be used only inside the `import` function.
+
+```javascript
+import("lodash-es").then(module => {
+    const debounce = module.default; // because debounce is a default export
+    // use debounce inside this function...
+});
+
+import("./helpers.js").then(module => {
+    const Helpers = module.default; // because Helpers is a default export
+    const getDate = module.getDate; // because getDate is a named export
+    // use Helpers and getDate inside this function...
+});
+```
+
+With async/await
+```javascript
+const button = document.querySelector("#button");
+
+button.addEventListener("click", async () => {
+    const module = await import("chat-library");
+    module.init();
+});
+```
+
+With destructuring
+```javascript
+const button = document.querySelector("#button");
+
+button.addEventListener("click", async () => {
+    const {init} = await import("chat-library");
+    init();
+});
+```
