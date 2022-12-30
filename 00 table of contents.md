@@ -11,11 +11,14 @@
 [[promises]]
 [[modules]]
 [[DOM]]
-[[package managers]]
-[[module bundlers]]
+[[loops]]
+[[variables]]
+
+[[web components]]
 
 # Misc
 [falsy values](falsy-values)
-
+[[closures]]
+[[event loop]]
 
 

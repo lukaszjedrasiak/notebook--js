@@ -14,6 +14,7 @@
 - [.split()](split)
 - [replace()](replace)
 - [replaceAll()](replaceAll)
+- [startsWith()](startsWith)
 
 ## Character access
 Square bracket syntax
