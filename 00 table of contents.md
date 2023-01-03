@@ -1,20 +1,18 @@
 [[syntax]]
 [[functions]]
-[[strings]]
 [[comments]]
 [[operators]]
-[[numbers]]
 [[conditions]]
 [[arrays]]
-[[objects]]
 [[classes]]
 [[promises]]
 [[modules]]
 [[DOM]]
 [[loops]]
 [[variables]]
-
+[[data types]]
 [[web components]]
+[[interactions]]
 
 # Misc
 [falsy values](falsy-values)
