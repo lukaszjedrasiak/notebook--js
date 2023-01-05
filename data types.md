@@ -6,3 +6,5 @@
 6. [[undefined]]
 7. [[objects]]
 8. [[symbols]]
+
+[[type conversion]]
