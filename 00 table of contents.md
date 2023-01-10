@@ -13,6 +13,7 @@
 [[data types]]
 [[web components]]
 [[interactions]]
+[[comparisons]]
 
 # Misc
 [falsy values](falsy-values)

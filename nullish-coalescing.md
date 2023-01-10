@@ -2,6 +2,8 @@
 > learn more about optional chaining in iterations via arrays
 > i.e.: `data.documents?.forEach(item => ...`
 
+**The nullish coalescing operator `??` provides a short way to choose the first “defined” value from a list.**
+
 It allows to assign default value, if the left-hand variable has `null` or `undefined` state.
 
 ```javascript
@@ -26,3 +28,7 @@ Nullish coalescing has lower precedence than such operators like `+` or `-`. So 
 const result = 2 + (user.age ?? 18);
 ```
 
+We can rewrite result = a ?? b using the operators that we already know, like this:
+```js
+result = (a !== null && a !== undefined) ? a : b;
+```

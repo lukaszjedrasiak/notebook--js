@@ -1,4 +1,5 @@
-Basic syntax
+## Basic syntax
+
 ```javascript
 if (condition) {
     //do something
@@ -24,6 +25,11 @@ if (condition) {
 	//do
 }
 ```
+## question mark
+
+```js
+let result = condition ? value1 : value2;
+```
 
 ## conditions operators
 ``` javascript
@@ -33,3 +39,5 @@ if (condition) {
 ===
 !==
 ```
+
+[[logical operators]]
