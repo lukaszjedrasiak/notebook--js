@@ -1,3 +1,5 @@
+[[while]]
+[[do while]]
 [[for]]
 [[forEach]]
 [[for-of]]
