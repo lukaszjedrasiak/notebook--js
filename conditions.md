@@ -41,3 +41,4 @@ let result = condition ? value1 : value2;
 ```
 
 [[logical operators]]
+[[switch]]
