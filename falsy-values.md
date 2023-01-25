@@ -6,3 +6,22 @@ In JavaScript, the values below will be converted to `false` and everything el
 -   `0`
 -   `NaN`
 -   `""` (empty string)
+
+## short-circuit evaluation
+Instead of this snippet:
+```js
+let username = '';
+let defaultName;
+ 
+if (username) {
+  defaultName = username;
+} else {
+  defaultName = 'Stranger';
+}
+```
+
+you can use this one:
+```js
+let username = '';
+let defaultName = username || 'Stranger';
+```

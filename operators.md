@@ -5,6 +5,7 @@
 
 - `unary` operator has only one operand
 - `binary` operator has two operands
+- `ternary` operator has three operands. There is only one ternary operator (TO CHECK): [[ternary operator]]
 
 ## sum
 ``` javascript
