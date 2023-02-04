@@ -1,21 +1,6 @@
 [element.textContent](textContent)
 [element.innerHTML](innerHTML)
 [element.value](value)
-[element.insertAdjacentHTML](insertAdjacentHTML)
-
-## creating elements
-
-```javascript
-const paragraph = document.createElement("p");
-paragraph.classList.add("text-center");
-paragraph.textContent = "Hello World";
-console.log(paragraph); // <p class="text-center">Hello World</p> (as an element not as a string)
-```
-
-Inserting element into DOM:
-```javascript
-document.body.appendChild(paragraph);
-```
 
 ## classes
 List of methods to dynamically add or remove classes **on** element.
@@ -59,13 +44,21 @@ const toggleDarkTheme = () => {
 }
 ```
 
-## attributes
+## attributes / properties
+When the browser loads the page, it “reads” (another word: “parses”) the HTML and generates DOM objects from it. For element nodes, most standard HTML attributes automatically become properties of DOM objects. For instance, if the tag is `<body id="page">`, then the DOM object has `body.id="page"`.
+
+> In short: 
+> -   Attributes – is what’s written in HTML.
+> -   Properties – is what’s in DOM objects.
+
+### methods for attributes
 1. `element.getAttribute(key)` method is used to get the value of a certain attribute by its key.
 2. `element.removeAttribute(key)` is used to remove an attribute.
 3. `element.setAttribute(key, value)` is used to write a new attribute (or update the value of an old one that already exists).
 4. `element.hasAttribute(key)` method is used to check whether an attribute exists or not. The function always returns a boolean.
+5. `element.attributes` is a collection of all attributes
 
-## custom attributes
+### custom attributes
 Custom attributes should be prefixed with `data-`, to avoid any future conflict with new attributes in HTML, i.e.:
 
 ```html
@@ -78,7 +71,9 @@ const element = document.querySelector('#one');
 const currency = element.dataset.currency;
 ```
 
-Data values are always saved as a string. So if you want to access the boolean value use the following condition: `value === "true"`. It allows you to convert `"true"` and `"false"` into a boolean.
+> Multiword attributes like `data-order-state` become camel-cased: `dataset.orderStat`
+
+Data values are always saved as a string. So if you want to access the boolean value use the following condition: `value === "true"`. It allows you to convert `"true"` and `"false"` into a boolean.
 
 ## styles
 ```js
@@ -96,9 +91,8 @@ We do recommend that you update classes instead of styles directly when possible
 | z-index          | zIndex          |
 
 ## misc
-1. `element.remove()` - removes element from DOM. See the difference between `element.innerHTML = ""`, which only empty its content.
-2. `document.body` - access the `<body>` of the page
-3. `document.documentElement` - access the `<html>` of the page
+1. `document.body` - access the `<body>` of the page
+2. `document.documentElement` - access the `<html>` of the page
 
 ## traversing
 1. `element.parentElement` - property that returns the parent element of the current element.
