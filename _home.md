@@ -7,7 +7,7 @@
 [[classes]]
 [[promises]]
 [[modules]]
-[[DOM]]
+[DOM](DOM)
 [[loops]]
 [[variables]]
 [[data types]]

@@ -9,7 +9,7 @@ In JavaScript, the values below will be converted to `false` and everything el
 
 ## short-circuit evaluation
 Instead of this snippet:
-```js
+`
 let username = '';
 let defaultName;
  
@@ -18,7 +18,7 @@ if (username) {
 } else {
   defaultName = 'Stranger';
 }
-```
+`
 
 you can use this one:
 ```js

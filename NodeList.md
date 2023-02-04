@@ -2,7 +2,7 @@
 
 -   they both have a `length` property (you can access it with `.length`)
 -   you can access items at a specific index with the square brackets. For example, `[0]` and `[1]`.
--   you can [iterate](https://learnjavascript.online/app.html?id=1803#) through both of them with `.forEach()`.
+-   you can iterate through both of them with `.forEach()`.
 
 ## Convert NodeList to Array
 

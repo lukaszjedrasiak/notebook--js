@@ -4,7 +4,12 @@
 document.querySelector("your-CSS-selector-here");
 ```
 
-If there are multiple items that satisfy the CSS selector that you specified, only the first one is returned. Later on, we'll see how you can select more than 1 item at a time.
+This method is an equivalent of this one, described later:
+```js
+document.querySelectorAll("your-CSS-selector-here")[0]
+```
+
+If there are multiple items that satisfy the CSS selector that you specified, **only the first one is returned**.
 
 Type of selectors:
 1. Type: `"h1"`
@@ -19,6 +24,15 @@ Type of selectors:
 ```javascript
 const navbar = document.getElementById("navbar"); // you should skip the #
 ```
+
+Remember:
+- `id` must be unique along the document. Otherwise, this method may return any of found elements at random
+- this method may be called only on `document` object.
+
+Similar methods:
+- `getElementsByTagName(tag)` - returns the collection. The `tag` parameter can be also a star `*` for any tags.
+- `getElementsByClassName(className)`
+- `getElementsByName(name)`
 
 ## selecting multiple elements
 ```js
