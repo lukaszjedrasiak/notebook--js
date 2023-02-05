@@ -60,6 +60,7 @@ The full list of properties available for given elements can be fetched from:
 [searching and selecting elements](searching-and-selecting-elements.md)
 [creating elements](creating-elements)
 [changing elements](changing-elements.md)
+[sizing elements](sizing-elements)
 [cloning elements](cloning-elements)
 [removing elements](removing-elements)
 

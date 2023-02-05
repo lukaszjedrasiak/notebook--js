@@ -3,6 +3,11 @@
 [element.value](value)
 
 ## classes
+If we want to add or read single css class on element we can use `className` property. This way replaces the whole string of classes.
+```js
+console.log(element.className); //
+```
+
 List of methods to dynamically add or remove classes **on** element.
 1. `element.classList.add()`
 2. `element.classList.remove()`
@@ -90,11 +95,17 @@ We do recommend that you update classes instead of styles directly when possible
 | font-size        | fontSize        |
 | z-index          | zIndex          |
 
-## misc
-1. `document.body` - access the `<body>` of the page
-2. `document.documentElement` - access the `<html>` of the page
+We can remove style from element in two ways
+- `element.style.property = ''`
+- `element.style.removeProperty(propery)`
+
+### reading styles
+```js
+getComputedStyle(element, [pseudo]) // returns an element with all styles applied.
+```
+
+> The values returned by `getComputedStyle` are resolved. It means that computed values (the final ones - result of cascade and inheritance) are converted into fixed and absolute units, like `px`. 
 
 ## traversing
 1. `element.parentElement` - property that returns the parent element of the current element.
 2. `element.closest("CSS-selector")` method returns the **closest parent** that matches the `CSS-selector`.
-3. 
