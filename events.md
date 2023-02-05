@@ -33,6 +33,7 @@ _An event_ is a signal that something has happened. All DOM nodes generate such
 3. [form events](form-events)
 4. [document events](document-events)
 5. [css events](css-events)
+6. [pointer events](pointer-events)
 
 ## -- events handlers --
 ### HTML attribute

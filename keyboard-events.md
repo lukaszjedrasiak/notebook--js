@@ -15,3 +15,7 @@ document.addEventListener("keyup", event => {
     console.log(event.key);
 });
 ```
+
+### properties
+- `event.key` – store the character (it ditinguish small caps and all caps)
+- `event.code` – store the 'physical key code' (i.e. KeyZ)
