@@ -1,9 +1,4 @@
-[[addEventListener]]
-[[removeEventListener]]
-[[once event listener]]
-
-## events details
-
+## -- event properties --
 When the user clicks that element, we can run a callback. This callback will receive from the browser one argument. We call this argument: event details.
 
 The event details contains information about the event that has just occurred. For example, for a click event:
@@ -25,98 +20,58 @@ button.addEventListener("click", event => {
 });
 ```
 
-## events types
-### click
+### other properties:
+- `event.type`
+- `event.clientX` / `event.clientY` – window-relative coordinates of the cursor.
+- `event.target` – the deepest element in tree that originated the event.
 
-### submit
-By default, the browser will send the data to the current page. To avoid that, you need to prevent the default action with `event.preventDefault()`.
+## -- events types --
+_An event_ is a signal that something has happened. All DOM nodes generate such signals (but events are not limited to DOM).
 
-```javascript
-const form = document.querySelector("#address-form");
+1. [mouse events](mouse-events)
+2. [keyboard events](keyboard-events)
+3. [form events](form-events)
+4. [document events](document-events)
+5. [css events](css-events)
 
-form.addEventListener("submit", event => {
-    // avoid reloading the page
-    event.preventDefault();
-});
-```
-
-### focus/blur
-The `focus` and `blur` events are often used in form validation. They let you know when a user _focuses_ (put the cursor inside of it) on a textbox and when they remove the focus (`blur`).
-
-The word `focus` means that the element is selected to receive user input from the keyboard. If you write something on your keyboard, it will be written inside the element that is focused.  
-When you remove the focus, then this will dispatch a `blur` event.
-
-You can listen to both of these events on text boxes. Let's see an example:
-
+## -- events handlers --
+### HTML attribute
 ```html
-<input type="text" id="name" placeholder="Enter your name">
+<input type="button" onlick="function()" value="sth">
 ```
 
-```javascript
-const name = document.querySelector("#name");
-
-name.addEventListener("focus", () => {
-    console.log("user focused inside the name");
-});
-
-name.addEventListener("blur", () => {
-    console.log("user removed focus from the name");
-});
+### DOM property
+```js
+element.onclick = function() {
+	// do sth
+};
 ```
 
-### DOMContentLoaded
-This event fires on the `document` element only. It signifies that the HTML has been loaded successfully by the browser. 
+If we want to call existing function we need to assign it without parentheses:
+```js
+function something() {
+	// do sth
+};
 
-This means that the browser has finished reading all of the content of your HTML file. It doesn't mean however that images and other assets have finished loading.
-
-```javascript
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM is ready");
-});
+element.onlick = something;
 ```
 
-### Scroll
-The scroll event triggers on any element that scrolls. It is often used on the `window` object as following:
+### addEventListener
+This method is a way to add multiple handlers for one event (i.e. highlight a button and show message after a click): 
+- [addEventListener](addEventListener)
+- [removeEventListener](removeEventListener)
 
-```javascript
-window.addEventListener("scroll", () => {
-    console.log("page scrolled");
-});
-```
-
-### change
-The `change` event is often used on the `<select>` element. It lets you know when the user has selected a new choice.
-
+### preventing browser actions
 ```html
-<select id="countries">
-    <option value="">Select a country</option>
-    <option value="NL">Netherlands</option>
-    <option value="BR">Brazil</option>
-</select>
+<a href="/" onclick="return false">Click here</a>
+or
+<a href="/" onclick="event.preventDefault()">here</a>
 ```
 
-```javascript
-const countries = document.querySelector("#countries");
+## -- links --
+1. https://javascript.info/introduction-browser-events
 
-countries.addEventListener("change", () => {
-    console.log(countries.value);
-});
-```
-
-### keydown/keyup
-
-The `keydown` and `keyup` events are used to know when the user has typed a character on the keyboard. These can be used to implement keyboard shortcuts.
-
-The only difference between `keydown` and `keyup` is that `keydown` triggers while the user starts pressing the button and before the character is being typed. On the other hand, `keyup` fires after the character has been typed.
-
-For most scenarios, you end up needing `keyup`. These events can be either added to the `document` (to know when a user has pressed a key anywhere on the page) or inside a textbox.
-
-```javascript
-document.addEventListener("keydown", event => {
-    console.log(event.key);
-});
-
-document.addEventListener("keyup", event => {
-    console.log(event.key);
-});
-```
+## -- further reading --
+1. [bubbling and capturing](https://javascript.info/bubbling-and-capturing)
+2. [event delegation](https://javascript.info/event-delegation) - how to add the same handling for many similar elements and check the event.target.
+3. [custom events](https://javascript.info/dispatch-events)

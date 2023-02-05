@@ -1,12 +1,17 @@
-## Syntax
+## -- syntax --
 
 ```js
-element.addEventListener(eventType, callback)
+element.addEventListener(eventType, callback, [options])
 ```
 
 This method allows you to wait for an event (let's say **click** for now) to happen on an `element`. Once that event occurs (the user clicks on the button), the `callback` function will execute.
 
-## Examples
+### options
+- `once`: if `true`, then the listener is automatically removed after it triggers. See: [once-event-listener](once-event-listener)
+- `capture`: the phase where to handle the event. For historical reasons, `options` can also be `false/true`, that’s the same as `{capture: false/true}`.
+- `passive`: if `true`, then the handler will not call `preventDefault()`.
+
+## -- examples --
 
 ### Basic usage
 ```javascript
