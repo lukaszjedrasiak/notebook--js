@@ -76,7 +76,7 @@ const element = document.querySelector('#one');
 const currency = element.dataset.currency;
 ```
 
-> Multiword attributes like `data-order-state` become camel-cased: `dataset.orderStat`
+> Multiword attributes like `data-order-state` become camel-cased: `dataset.orderState`
 
 Data values are always saved as a string. So if you want to access the boolean value use the following condition: `value === "true"`. It allows you to convert `"true"` and `"false"` into a boolean.
 

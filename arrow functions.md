@@ -15,6 +15,10 @@ const sum = (a, b) => {
 }
 ```
 
+## concise body
+
+### parentheses
+
 If there is only one argument, parentheses may be ommited:
 ```js
 	const double = n => n * 2;
@@ -25,7 +29,15 @@ If there are no arguments, parenthese must be present:
 	const sayHi = () => console.log('Hi!');
 ```
 
+### curly braces
+
+A function body composed of a single-line block does not need curly braces. Without the curly braces, whatever that line evaluates will be automatically returned.
+
 One-line arrow functions do not need a `return` keyword. See more: [[implicit return]]
+
+```js
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+```
 
 ## Examples
 

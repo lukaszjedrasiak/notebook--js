@@ -1,3 +1,8 @@
+Three ways of declaring functions:
+1. function declaration
+2. function expression
+3. arrow function
+
 ## function declaration
 
 ```javascript
