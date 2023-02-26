@@ -1,3 +1,5 @@
+## basic syntax
+
 ```js
 array.reduce(reducer(accumulator, current), initialValue); //return the single value - result of reducer function iterating over each item
 ```
@@ -7,7 +9,8 @@ Usage
 - summing the array items
 - multiply the array items
 
-Example
+## example
+
 ```javascript
 const grades = [10, 15, 5];
 

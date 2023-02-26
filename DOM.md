@@ -1,7 +1,12 @@
+See: [parsing scripts](parsing-scripts)
+
 ## definition
+
 The DOM (Document Object Model) is a JavaScript object & API (a set of functions) that represents the HTML of your page. It lets you interact from JavaScript with the elements on your page. You can read and change text, add and delete items, and a lot more.
 
 In other words: an HTML/XML document is represented inside the browser as the DOM tree.
+
+> DOM is a data structure (tree-like **M**odel that organizes a web page’s HTML **D**ocument as an **O**bject.
 
 There are 12 node types. In practice we usually work with 4 of them:
 1.  **document** – the “entry point” into DOM.
@@ -12,6 +17,11 @@ There are 12 node types. In practice we usually work with 4 of them:
 > We usually want to manipulate only **element nodes** - the nodes that represent tags and form the structure of the page.
 
 ## basic elements
+
+The entry point into DOM is `document` element. The `document` object allows you to access the root node of the DOM tree. Before you can access a specific element in the page, first you must access the document structure itself. The `document` object allows scripts to access children of the DOM as properties.
+
+It has several properties: [document properties](https://developer.mozilla.org/en-US/docs/Web/API/Document).
+
 | tag  | element | node |
 | ---- | --- | ---  |
 | html | HTMLHtmlElement | document.documentElement |

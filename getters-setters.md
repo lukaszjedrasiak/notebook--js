@@ -1,6 +1,11 @@
 **Defining getters and setters in a class is _mostly_ used to validate or modify certain values before they are set as properties on a class.**
 
----
+## summary
+
+1. Add an underscore (`_`) as a prefix of property name to show that it is private property, i.e. `_property`.
+2. Add a setter method to allow editing private property, i.e. `object.setterName = value`. Although, property can be still accessed without setter: `object._property = value`.
+3. Add a getter method to get the value of private property, i.e. `variable = object.getterName`.
+4. See that - event setters and getters are methods - we call them without parentheses.
 
 ### Setter
 
@@ -40,6 +45,8 @@ This setter will then create a new instance variable called `_age` and set it 
 ## Getter
 
 **That should be your main takeaway here, a getter is just a computed property, which is why you can access it with a dot and you don't have to call it as if it were a method.**
+
+> In other words - getters are called without parentheses.
 
 The remaining problem is that if we try to access `user.age`, we get `undefined`. That's because we have not defined a `getter` for the `age` property.
 

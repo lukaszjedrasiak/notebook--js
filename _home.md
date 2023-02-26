@@ -20,4 +20,4 @@
 [[closures]]
 [[event loop]]
 
-
+[exercises](exercises)

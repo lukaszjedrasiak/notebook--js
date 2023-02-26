@@ -3,6 +3,8 @@ Three ways of declaring functions:
 2. function expression
 3. arrow function
 
+> Variables passed to the function within parameters are *passed-by-reference*. It means that parameter is passing to the function a reference to where the variable memory is stored. It allows us to change (mutate) the original (global) variables.
+
 ## function declaration
 
 ```javascript
@@ -19,6 +21,29 @@ function sum(x = 0, y = 0) {
 ```
 
 **A Function Declaration can be called earlier than it is defined**, because is created when JavaScript is preparing to start the script and is visible everywhere in it.
+
+## functions as values
+
+JavaScript functions behave like any other data type in the language; we can assign functions to variables, and we can reassign them to new variables.
+
+```js
+const announceThatIAmDoingImportantWork = () => {  
+    console.log("I’m doing very important work!");  
+};
+
+const busy = announceThatIAmDoingImportantWork;
+busy(); // This function call barely takes any space!
+```
+
+`busy` is a variable that holds a _reference_ to our original function. If we could look up the address in memory of `busy` and the address in memory of `announceThatIAmDoingImportantWork` they would point to the same place. Our new `busy()` function can be invoked with parentheses as if that was the name we originally gave our function.
+
+Notice how we assign `announceThatIAmDoingImportantWork` without parentheses as the value to the `busy` variable. We want to assign the value of the function itself, not the value it returns when invoked.
+
+Since functions are a type of object, they have properties such as `.length` and `.name`, and methods such as `.toString()`.
+
+```js
+console.log(busy.name) //returns 'announceThatIAmDoingImportantWork'
+```
 
 ## returning booleans
 
@@ -78,4 +103,4 @@ Function Expressions are created when the code execution reaches them, so it is 
 
 ## miscellaneus
 [[arrow functions]]
-[[functions callbacks]]
+[[function-callbacks]]
