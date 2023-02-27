@@ -97,7 +97,7 @@ We do recommend that you update classes instead of styles directly when possible
 
 We can remove style from element in two ways
 - `element.style.property = ''`
-- `element.style.removeProperty(propery)`
+- `element.style.removeProperty(property)`
 
 ### reading styles
 ```js
@@ -105,7 +105,3 @@ getComputedStyle(element, [pseudo]) // returns an element with all styles applie
 ```
 
 > The values returned by `getComputedStyle` are resolved. It means that computed values (the final ones - result of cascade and inheritance) are converted into fixed and absolute units, like `px`. 
-
-## traversing
-1. `element.parentElement` - property that returns the parent element of the current element.
-2. `element.closest("CSS-selector")` method returns the **closest parent** that matches the `CSS-selector`.

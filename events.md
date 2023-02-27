@@ -20,10 +20,20 @@ button.addEventListener("click", event => {
 });
 ```
 
+```js
+const randomFunction = event => {
+	const clickedElement = event.currentTarget;
+    console.log(clickedElement.textContent);
+}
+
+button.addEventListener('click', randomFunction);
+```
+
 ### other properties:
-- `event.type`
+- `event.type` - property to access the name of the event.
 - `event.clientX` / `event.clientY` – window-relative coordinates of the cursor.
 - `event.target` – the deepest element in tree that originated the event.
+- `timeStamp` – to access the number of millisecods that passed since the document loaded and the event was triggered.
 
 ## -- events types --
 _An event_ is a signal that something has happened. All DOM nodes generate such signals (but events are not limited to DOM).
@@ -58,6 +68,9 @@ element.onlick = something;
 ```
 
 ### addEventListener
+
+Using the `.addEventListener()` method, we can have a DOM element listen for a specific event and execute a block of code when the event is detected. The DOM element that listens for an event is called the _event target_ and the block of code that runs when the event happens is called the _event handler_.
+
 This method is a way to add multiple handlers for one event (i.e. highlight a button and show message after a click): 
 - [addEventListener](addEventListener)
 - [removeEventListener](removeEventListener)

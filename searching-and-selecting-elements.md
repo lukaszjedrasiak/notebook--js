@@ -21,6 +21,7 @@ Type of selectors:
 `document.querySelector("CSS-selector")` returns an **object** which is an instance of `HTMLElement`. HTMLElement is the parent class that every single HTML element in your page inherits from. This means that every element on your page is an instance of a single class which is `HTMLElement`.
 
 ### alternative methods
+
 ```javascript
 const navbar = document.getElementById("navbar"); // you should skip the #
 ```
@@ -33,6 +34,12 @@ Similar methods:
 - `getElementsByTagName(tag)` - returns the collection. The `tag` parameter can be also a star `*` for any tags.
 - `getElementsByClassName(className)`
 - `getElementsByName(name)`
+
+These methods return an array of elements, instead of just one element. You can use bracket notation to access individual elements of an array.
+
+```js
+const el = document.getElementsByClassName(class)[0];
+```
 
 ## selecting multiple elements
 ```js

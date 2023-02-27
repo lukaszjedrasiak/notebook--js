@@ -73,6 +73,7 @@ The full list of properties available for given elements can be fetched from:
 [sizing elements](sizing-elements)
 [cloning elements](cloning-elements)
 [removing elements](removing-elements)
+[traversing the DOM](traversing-dom)
 
 ### matches
 This method doesn't search anything. It checks if given element matches the given css selector and returns true or false respectively.

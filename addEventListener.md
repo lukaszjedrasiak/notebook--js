@@ -6,6 +6,16 @@ element.addEventListener(eventType, callback, [options])
 
 This method allows you to wait for an event (let's say **click** for now) to happen on an `element`. Once that event occurs (the user clicks on the button), the `callback` function will execute.
 
+Instead of using an anonymous function as the event handler, it’s best practice to create a named event handler function. Your code will remain organized and reusable this way, even if your code gets complex. Check out the syntax:
+
+```js
+function eventHandlerFunction() {
+// this block of code will run when click event happens
+}
+
+eventTarget.addEventListener('click', eventHandlerFunction);
+```
+
 ### options
 - `once`: if `true`, then the listener is automatically removed after it triggers. See: [once-event-listener](once-event-listener)
 - `capture`: the phase where to handle the event. For historical reasons, `options` can also be `false/true`, that’s the same as `{capture: false/true}`.

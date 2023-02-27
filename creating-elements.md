@@ -2,6 +2,7 @@
 Example:
 ```javascript
 const paragraph = document.createElement("p");
+paragraph.id = 'sampleId' //add ID to the paragraph
 paragraph.classList.add("text-center");
 paragraph.textContent = "Hello World";
 console.log(paragraph); // <p class="text-center">Hello World</p> (as an element not as a string)
