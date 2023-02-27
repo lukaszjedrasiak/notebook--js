@@ -1,3 +1,5 @@
+Static methods are not available in individual instances but can be called directly from the class.
+
 Example:
 ```javascript
 console.log(Config.getYear()); // for example, 2025

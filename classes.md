@@ -1,18 +1,27 @@
+> Classes are templates for objects.
+
 Naming convention: UpperCamelCase
 
 ## creating class
+
+JavaScript calls the `constructor()` method every time it creates a new _instance_ of a class.
+
 ```js
 class ClassName {
     constructor(optionalParam) {
         console.log(`New class instance with param: ${optionalParam}`);
     }
 }
+```
 
-const instance = new ClassName("parametr");
+An _instance_ is an object that contains the property names and methods of a class, but with unique property values.
 
+```js
+const instance = new ClassName("parameter");
 ```
 
 ## old way of creating classes
+
 ```javascript
 //This is the constructor
 function Rectangle(width, height) {
@@ -35,3 +44,12 @@ Rectangle.prototype.isSquare = function() {
 
 [[public fields]]
 [[private fields]]
+
+## short summary
+
+-   _Classes_ are templates for objects.
+-   Javascript calls a _constructor_ method when we create a new instance of a class.
+-   _Inheritance_ is when we create a parent class with properties and methods that we can extend to child classes.
+-   We use the `extends` keyword to create a subclass.
+-   The `super` keyword calls the `constructor()` of a parent class.
+-   Static methods are called on the class, but not on instances of the class.
