@@ -3,13 +3,34 @@
 - You can make variables/functions/classes available to other files by **export**ing them from the current file and then **import**ing them from another module/file.
 - The path must start with `./` when importing from a local file. Make sure you've got the correct path (if there are folders).
 
-## import / export
+## export
+
+Exporting single class / function / etc. from module
+
 ```js
 //helper.js
 export class Helper {
 	//...
 }
 ```
+
+Exporting multiple classes / functions from module
+
+```js
+
+class Helper {
+	//...
+}
+
+const sth() {
+	//...
+}
+
+export {Helper, sth}
+
+```
+
+## import
 
 ```js
 //index.js
@@ -22,6 +43,8 @@ new Helper(); // works as expected
 <!-- embedding those scripts without bundler like webpack/parcel -->
 <script type="module" src="index.js"></script>
 ```
+
+> `import` syntax can be used only inside a `module` (whatever it means), so you have to add an attribute `type` to `script` tag within the HTML file.
 
 ### Renaming imported module
 ```javascript
@@ -52,6 +75,9 @@ const isEvenNumber = number => {
     return new NumericHelper(number).isEven();
 }
 ```
+
+[modules import-export example](modules-import-export-example)
+[importing default values](exporting-importing-default-values.md)
 
 [[module bundlers]]
 [[package managers]]

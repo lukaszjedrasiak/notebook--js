@@ -4,7 +4,7 @@
 [[operators]]
 [[conditions]]
 [[arrays]]
-[[classes]]
+[classes](classes)
 [[promises]]
 [[modules]]
 [DOM](DOM)
