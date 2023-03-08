@@ -1,4 +1,4 @@
-[[syntax]]
+[errors handling](errors-handling)
 [[functions]]
 [[comments]]
 [[operators]]
