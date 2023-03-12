@@ -35,10 +35,18 @@ fetchData('fromWhere')
 	.finally(() => console.log("end")) //execute no matter if fetching was successful or not
 ```
 
-- A promise can have 3 states: `pending`, `fulfilled`, and `rejected`.
+## promise states
+
+A promise can have 3 states: 
+- `pending` – The initial state - the operation has not completed yet.
+- `fulfilled` – The operation has completed successfully and the promise now has a _resolved value_. For example, a request’s promise might resolve with a JSON object as its value.
+- `rejected` – The operation has failed and the promise has a reason for the failure. This reason is usually an `Error` of some kind.
+
 - Every promise starts with the `pending` state and then becomes `fulfilled` when it has been completed successfully.
 - Promises let you run a callback sometime in the future when the promise has been completed successfully.
 
+[setTimeout()](setTimeout)
+[setInterval()](setInterval)
 [[creating promises]]
 [[rejecting promises]]
 [[fetch]]

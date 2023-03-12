@@ -7,7 +7,9 @@
 So, because `fetch(URL)` returns a promise, we can resolve the promise with a .then(callback). This callback will run sometime in the future when the fetch request has been completed.
 
 ```js
-const api = fetch('URL').then(response => response.json()).then(data => console.log(data));
+const api = fetch('URL')
+	.then(response => response.json())
+	.then(data => console.log(data));
 ```
 
 Also, this callback will receive as a first argument the response from the request that we sent. You can call this argument whatever you want, however, we recommend that you call it response.
