@@ -1,3 +1,5 @@
+Destructuring is a way to unpack values from arrays and objects and assign them to variables or parameters.
+
 ## array destructuring
 Destructuring means assigning array items into variables.
 
@@ -57,4 +59,23 @@ const {id, isAdmin = false, theme} // default works only when key do not exist i
 Sugar syntax with renaming values
 ```js
 const {id, isAdmin: newVariableName, theme};
+```
+
+## destructuring function parameters
+
+```js
+let truck = {  
+  model: '1977 Mustang convertible',  
+  maker: 'Ford',  
+  city: 'Detroit',  
+  year: '1977',  
+  convertible: true  
+};  
+  
+const printCarInfo = ({model, maker, city}) => {  
+  console.log(`The ${model}, or ${maker}, is in the city ${city}.`);  
+};  
+  
+printCarInfo(truck);  
+// Prints: The 1977 Mustang convertible, or Ford, is in the city Detroit.
 ```

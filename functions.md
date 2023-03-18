@@ -1,3 +1,10 @@
+A programming language is said to have **First-class functions** when functions in that language are treated like any other variable. For example, in such a language, a function:
+- can be passed as an argument to other functions (the function that we pass as an argument to another function is called a _callback function_),
+- can be returned by another function (A function that returns a function or takes other functions as arguments is called a _higher-order function_),
+- can be assigned as a value to a variable.
+
+---
+
 Three ways of declaring functions:
 1. function declaration
 2. function expression
