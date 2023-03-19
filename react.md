@@ -1,12 +1,21 @@
 [jsx conditionals](jsx-conditionals)
+[components](components)
 
 ## importing
 
 ```js
 import React from 'react';
+```
 
+This creates an object named `React` which contains methods necessary to use the React library.
+
+```js
 import ReactDOM from 'react-dom';
 ```
+
+The methods imported from `'react-dom'` are meant for interacting with the DOM.
+
+The DOM is _used_ in React applications, but it isn’t _part_ of React. After all, the DOM is also used in countless non-React applications. Methods imported from `'react'` are only for pure React purposes, such as creating components or writing JSX elements.
 
 ## jsx
 
