@@ -1,5 +1,7 @@
 A component is a small, reusable chunk of code that is responsible for one job. That job is often to render some HTML.
 
+[component interactions](component-interactions)
+
 ## class components
 
 ```js
