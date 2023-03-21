@@ -1,6 +1,11 @@
 A component is a small, reusable chunk of code that is responsible for one job. That job is often to render some HTML.
 
-[component interactions](component-interactions)
+A React component should use `props` to store information that can be changed, but can only be changed by a _different_ component.
+
+A React component should use `state` to store information that the component itself can change.
+
+[component props](component-props)
+[component states](component-states)
 
 ## class components
 
@@ -13,12 +18,17 @@ const fiftyFifty = Math.random() < 0.5;
 
 // create component class
 class MyComponentClass extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = { // state here }
+	}
+
 	myFunc() {
 		alert('alert');
 	}
 	
 	render() {
-
 		// add some logic
 		let subtitle;
 		fiftyFifty ? subtitile = "toss" : subtitle = "coin"
@@ -29,6 +39,18 @@ class MyComponentClass extends React.Component {
 				<span>{subtitle}</span>
 			</div>
 		)
+	}
+
+	componentDidMount() {
+		// 
+	}
+
+	componentWillUnmount() {
+		// 
+	}
+
+	componentDidUpdate() {
+		//
 	}
 }
 
@@ -78,3 +100,28 @@ ReactDOM.render(
 ```
 
 > `ReactDOM.render()` will tell `<MyComponentClass />` to call _its_ render method.
+
+## functional components
+
+```js
+// A component class written in the usual way:
+export class MyComponentClass extends React.Component {
+  render() {
+    return <h1>Hello world</h1>;
+  }
+}
+
+// The same component class, written as a stateless functional component:
+export const MyComponentClass = props => {
+  return (
+	  <h1>Hello world</h1>;
+	  <p>{props.someProps}</p>
+  )
+}
+
+// Works the same either way:
+ReactDOM.render(
+  <MyComponentClass />,
+  document.getElementById('app')
+);
+```
