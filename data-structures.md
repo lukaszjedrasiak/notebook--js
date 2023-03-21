@@ -1,0 +1,5 @@
+[nodes](nodes)
+[singly linked lists](singly-linked-lists)
+[doubly linked lists](doubly-linked-lists)
+[queues](queues)
+[stacks](stacks)
