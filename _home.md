@@ -25,6 +25,7 @@
 [OWASP Top Ten](owasp-top-ten)
 [web apps](web-apps)
 [data structures](data-structures)
+[algorithms](algorithms)
 
 ## frameworks
 
