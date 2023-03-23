@@ -16,3 +16,5 @@ You **cannot** use optional chaining on an object that may not exist. The obje
 Optional chaining can be used for arrays. The syntax is `?.[index]`
 Optional chaining can be used for functions. The syntax is `functionName?.()`
 Optional chaining **cannot** be used for assignment. It's _only_ used for **reading**
+
+**short circuit** – if the value on the left side of `?` sign is `null` or `undefined` the whole expression is `undefined` without checking the right side of it.

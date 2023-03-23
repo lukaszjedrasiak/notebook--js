@@ -9,3 +9,8 @@ const factorial = num => {
 }
 console.log(factorial(7))
 ```
+
+Most beautiful syntax :)
+```js
+const factorial = x => (x === 0) || (x === 1) ? 1 : x * factorial(x-1);
+```

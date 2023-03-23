@@ -26,6 +26,7 @@
 [web apps](web-apps)
 [data structures](data-structures)
 [algorithms](algorithms)
+[escape characters](escape-characters)
 
 ## frameworks
 

@@ -3,6 +3,7 @@ In JavaScript, the values below will be converted to `false` and everything el
 -   `null`
 -   `undefined`
 -   `0`
+- `-0`
 -   `NaN`
 -   `""` (empty string)
 

@@ -2,6 +2,27 @@ Objects are _passed by reference_. This means when we pass a variable assigned 
 
 In other words: when we make changes to an object passed into a function, those changes are permanent.
 
+## comparing objects
+
+Objects are not being compared on the _value_ basis. Two objects are different even though they have the same values inside. The same is for arrays.
+
+```js
+let o = {x: 1}
+let p = {x: 1}
+
+x === p //false
+```
+
+Objects are being compared on the _reference_ basis. Two values are the same if they reference to the same object.
+
+```js
+let o = {x: 1}
+let p = o
+o.x = 2
+
+p === o // true
+```
+
 ## creating objects
 
 ### single object

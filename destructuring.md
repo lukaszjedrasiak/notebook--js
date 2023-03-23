@@ -29,6 +29,13 @@ console.log(width); //20
 console.log(height); //5
 ```
 
+Storing redundant values
+```js
+let [x, ...y] = [1, 2, 3, 4]
+console.log(x) // => 1
+console.log(y) // => [2, 3, 4]
+```
+
 ## objects destructuring
 Classic syntax
 ```js
@@ -59,6 +66,19 @@ const {id, isAdmin = false, theme} // default works only when key do not exist i
 Sugar syntax with renaming values
 ```js
 const {id, isAdmin: newVariableName, theme};
+```
+
+### usage
+
+```js
+let o = {
+	x: 1,
+	y: 2
+}
+
+for (conts [name, value] of Object.entries(0)) {
+	console.log(name, value)
+}
 ```
 
 ## destructuring function parameters

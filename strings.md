@@ -4,17 +4,29 @@
 - string.length;
 
 ## Methods
-- .toLowerCase();
-- .toUpperCase();
-- [.substring()](substring)
-- [.parseInt()](parseInt)
-- [.trim()](trim)
-- [.startsWith() / endsWith()](startsWith_endsWith.md)
+- .charAt()
+- .charCodeAt()
+- .codePointAt
+- .concat()
 - [.includes()](includes)
-- [.split()](split)
+- .indexOf()
+- .lastIndexOf()
+- .normalize()
+- .padEnd()
+- .padStart()
+- [.parseInt()](parseInt)
 - [replace()](replace)
 - [replaceAll()](replaceAll)
-- [startsWith()](startsWith)
+- [.split()](split)
+- [.startsWith() / endsWith()](startsWith_endsWith.md)
+- [.substring()](substring)
+- .slice()
+- .split()
+- .toLowerCase();
+- .toUpperCase();
+- [.trim()](trim)
+- .trimEnd()
+- .trimStart()
 
 ## Character access
 Square bracket syntax
@@ -34,5 +46,5 @@ string.at(-1);
 string[string.length - 1];
 ```
 
-
+Strings are iterable. It means that you can iterate each character inside string with `for/of` loop or `...`
 
