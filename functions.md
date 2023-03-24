@@ -111,3 +111,4 @@ Function Expressions are created when the code execution reaches them, so it is 
 ## miscellaneus
 [[arrow functions]]
 [[function-callbacks]]
+[return](return)
