@@ -1,5 +1,11 @@
 Objects are _passed by reference_. This means when we pass a variable assigned to an object into a function as an argument, the computer interprets the parameter name as pointing to the space in memory holding that object. As a result, functions which change object properties actually mutate the object permanently (even when the object is assigned to a `const` variable).
 
+If we assign an object to variable like this:
+```js
+y = obj;
+```
+we do not copy an object to `y` variable, but we assign a reference. So if we make changes to the `y` variable we change the `obj`.
+
 In other words: when we make changes to an object passed into a function, those changes are permanent.
 
 ## comparing objects
@@ -27,6 +33,7 @@ p === o // true
 
 ### single object
 
+Object literals:
 ```javascript
 const user = {
     id: 1,
@@ -34,6 +41,19 @@ const user = {
     lastName: "Doe",
     age: 20
 };
+```
+
+`new` operator:
+```js
+let o = new Object() // {} equivalent
+let a = new Array() // [] equivalent
+let d = new Date()
+let r = new Map()
+```
+
+function `Object.create()`
+```js
+let ol = Object.create({x: 1, y: 2});
 ```
 
 ### multiple objects
@@ -72,6 +92,46 @@ const monsterFactory = (name, age, energySource, catchPhrase) => {
 
 const ghost = monsterFactory('Ghouly', 251, 'ectoplasm', 'BOO!');  
 ghost.scare(); // 'BOO!'
+```
+
+## object properties
+
+`delete` operator – removes the property of an object (only self-properties, not inherited).
+```js
+delete book.author;
+delete book["title"]
+```
+
+`in` operator – checks if given property is in object.
+```js
+let obj = {x: 1};
+"x" in obj; // true
+"y" in obj; // false
+"toString" in obj; // true - it is inherited property
+```
+
+`hasOwnProperty()` method – works as `in` operator but returns `false` if given property is inherited.
+```js
+let obj = {x: 1};
+obj.hasOwnProperty("x"); // true
+obj.hasOwnProperty("y"); // false
+obj.hasOwnProperty("toString") // false - inherited property
+```
+
+alternative way of checking property existence:
+```js
+let obj = {x: 1};
+obj.x !== undefined // true
+obj.y !== undefined // false
+obj.toString !== undefined // true
+```
+
+### copying properties from object to object
+
+```js
+let position = {x: 0, y: 0};
+let dimensions = {width: 100, height: 75};
+let rect = {...position, ...dimensions}
 ```
 
 ## reading object values
@@ -216,6 +276,7 @@ anyObject.someName();
 [Object.values()](object-values)
 [Object.entries()](object-entries)
 [Object.assign](object-assign)
+obj.toString() – converts an `obj` to string
 
 ## chaining nested objects
 

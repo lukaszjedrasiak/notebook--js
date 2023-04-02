@@ -13,7 +13,7 @@ If there are multiple items that satisfy the CSS selector that you specified, **
 
 Type of selectors:
 1. Type: `"h1"`
-2. ID: `"navbar"`
+2. ID: `"#navbar"`
 3. Class: `".item"`
 4. Descendant selector: `"#banner .item"`
 5. Attribute: `"[disabled]"`

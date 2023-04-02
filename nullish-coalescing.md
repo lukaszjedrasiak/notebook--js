@@ -2,7 +2,34 @@
 > learn more about optional chaining in iterations via arrays
 > i.e.: `data.documents?.forEach(item => ...`
 
-**The nullish coalescing operator `??` provides a short way to choose the first “defined” value from a list.**
+**The nullish coalescing operator `??` provides a short way to choose the first “defined” value from a list, instead of displaying "null" or "undefined"**
+
+## example
+
+```js
+let len = book.author.surname
+```
+
+## explicit declaration
+
+```js
+let surname = undefined;
+if (book) {
+	if (book.author) {
+		surname = book.author.surname
+	}
+}
+```
+
+## sugar syntax
+
+```js
+surname = book && book.author && book.author.surname;
+```
+
+```js
+let surname = book?.author?.surname;
+```
 
 It allows to assign default value, if the left-hand variable has `null` or `undefined` state.
 
