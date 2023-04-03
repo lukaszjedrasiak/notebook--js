@@ -1,5 +1,7 @@
 > Classes are templates for objects.
 
+A class in JavaScript is a collection of objects inheriting properties from the same prototype. Defining a class in JS involves defining the prototype.
+
 Naming convention: UpperCamelCase
 
 ## creating class

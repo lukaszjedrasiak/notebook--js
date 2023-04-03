@@ -1,5 +1,7 @@
 Static methods are not available in individual instances but can be called directly from the class.
 
+Static methods are also called `class methods` because they are invoked with class name. `Instance methods` are invoked with the instance name.
+
 Example:
 ```javascript
 console.log(Config.getYear()); // for example, 2025

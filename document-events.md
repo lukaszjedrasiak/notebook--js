@@ -18,5 +18,10 @@ window.addEventListener("scroll", () => {
 });
 ```
 
+## -- other events --
+1. `online` / `offline` – after establishing or loosing the net connection
+2. `visibilitychange` – when document appears in window after switching tabs. The `document.visibilityState` takes value `visible` or `hidden`.
+3. `dragstart` / `dragover` / `dragend` / `drop` – drag&drop API
+
 ## -- further reading --
 1. [onscroll](https://javascript.info/onscroll)

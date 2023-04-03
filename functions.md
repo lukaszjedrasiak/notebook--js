@@ -108,7 +108,16 @@ let newSum = sum;
 
 Function Expressions are created when the code execution reaches them, so it is impossible to call them before declaration.
 
+## Immediately Invoked Function Expression (IIFE)
+
+```js
+(function() {
+	// body
+}());
+```
+
 ## miscellaneus
 [[arrow functions]]
 [[function-callbacks]]
 [return](return)
+[function parameters](function-parameters)

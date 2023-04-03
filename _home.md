@@ -29,5 +29,7 @@
 [escape characters](escape-characters)
 
 ## frameworks
-
 [react](react)
+
+## to do
+SVG code can be used to display icons. It can be included in `<template>` tag and used multiple times.

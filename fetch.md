@@ -12,6 +12,14 @@ const api = fetch('URL')
 	.then(data => console.log(data));
 ```
 
+```js
+async function api() {
+	let response = await fetch('URL');
+	let data = await response.json();
+	console.log(data);
+}
+```
+
 Also, this callback will receive as a first argument the response from the request that we sent. You can call this argument whatever you want, however, we recommend that you call it response.
 
 Just like how fetch(URL) returns a promise, the response.json() method also returns a promise. This means that we cannot read its result directly. Instead, we have to resolve the promise with .then(callback).
