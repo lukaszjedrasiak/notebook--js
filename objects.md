@@ -292,3 +292,4 @@ See also: [optional chaining](optional-chaining)
 [nullish coalesing](nullish-coalescing)
 [[built-in objects]]
 [this keyword](this-keyword)
+[constructor-new](constructor-new)

@@ -6,21 +6,24 @@
 ## Methods
 - .charAt()
 - .charCodeAt()
-- .codePointAt
+- [.codePointAt()](codePointAt)
 - .concat()
 - [.includes()](includes)
-- .indexOf()
-- .lastIndexOf()
+- [.indexOf()](indexOf)
+- .lastIndexOf() – works as a `indexOf()` method but searches from the end of a string to its beginning.
+- localeCompare() – compares two strings with the rules according to given or system language.
 - .normalize()
 - .padEnd()
 - .padStart()
 - [.parseInt()](parseInt)
+- [.repeat()](repeat)
 - [replace()](replace)
 - [replaceAll()](replaceAll)
 - [.split()](split)
-- [.startsWith() / endsWith()](startsWith_endsWith.md)
+- [.startsWith() / endsWith()](startsWith_endsWith)
+- [.substr](substr)
 - [.substring()](substring)
-- .slice()
+- .slice() – works very similar to `substring()` method. Negative values are supported. Is shorter to write, so it is recommended over `substring`.
 - .split()
 - .toLowerCase();
 - .toUpperCase();
@@ -28,10 +31,15 @@
 - .trimEnd()
 - .trimStart()
 
+## String methods
+- `String.fromCodePoint(code)` – returns a character by its numeric `code`
+
 ## Character access
 Square bracket syntax
 ```javascript
 string[0]; //first character
+string[string.length - 1] // last character
+string[-1] // undefined
 ```
 
 .at(index) method
@@ -40,11 +48,11 @@ string.at(0); //first character
 string.at(-1); //last character
 ```
 
-How to access to the last string character?
-``` javascript
-string.at(-1);
-string[string.length - 1];
-```
-
 Strings are iterable. It means that you can iterate each character inside string with `for/of` loop or `...`
 
+```js
+let str = "random string";
+for (let char of str) {
+	console.log(char);
+}
+```
