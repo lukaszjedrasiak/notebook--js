@@ -1,3 +1,4 @@
+[js in browser](js-in-browser)
 [errors handling](errors-handling)
 [[functions]]
 [[comments]]

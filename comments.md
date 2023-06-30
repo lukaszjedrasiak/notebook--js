@@ -10,4 +10,7 @@ Inline comments
 //inline comment
 ```
 
+## hotkeys
 
+`ctrl` + `/` – comment one line
+`shift` + `alt` + `a` – comment multiline (vsc specific)
