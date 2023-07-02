@@ -1,4 +1,4 @@
-Used for numbers of any kind: integer or floating-point, integers are limited by `±(253-1)`.
+Used for numbers of any kind: integer or floating-point, integers are limited by $±(2^{53}-1)$.
 
 You can also use:
 - hexadecimal numbers: `0xff`,

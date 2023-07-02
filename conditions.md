@@ -26,7 +26,7 @@ if (condition) {
 }
 ```
 ## question mark
-Also known as [[ternary operator]]
+Also known as [[conditional-ternary-operator]]
 
 ```js
 let result = condition ? value1 : value2;

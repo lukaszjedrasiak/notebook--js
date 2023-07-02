@@ -1,8 +1,12 @@
 [js in browser](js-in-browser)
+[data types](data-types.md)
+[operators](operators)
+
+---
+
 [errors handling](errors-handling)
 [[functions]]
 [[comments]]
-[[operators]]
 [[conditions]]
 [[arrays]]
 [classes](classes)
@@ -11,7 +15,6 @@
 [DOM](DOM)
 [[loops]]
 [[variables]]
-[[data types]]
 [[web components]]
 [[interactions]]
 [[comparisons]]

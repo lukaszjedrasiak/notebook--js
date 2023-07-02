@@ -2,7 +2,7 @@
 > learn more about optional chaining in iterations via arrays
 > i.e.: `data.documents?.forEach(item => ...`
 
-**The nullish coalescing operator `??` provides a short way to choose the first “defined” value from a list, instead of displaying "null" or "undefined"**
+**The nullish coalescing operator `??` provides a short way to choose the first “defined” value from a list, instead of displaying "null" or "undefined".**
 
 ## example
 

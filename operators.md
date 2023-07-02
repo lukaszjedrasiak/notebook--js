@@ -1,3 +1,5 @@
+## naming conventions
+
 ```
     2            +           2
 /operand/ - /operator/ - /operand/
@@ -5,102 +7,73 @@
 
 - `unary` operator has only one operand
 - `binary` operator has two operands
-- `ternary` operator has three operands. There is only one ternary operator (TO CHECK): [[ternary operator]]
+- `ternary` operator has three operands. There is only one ternary operator: [conditional ternary operator](conditional-ternary-operator.md)
 
-## sum
-``` javascript
-2 + 2 // 4
-```
+### list of all operators (precedence order)
 
-## concatenation
-``` javascript
-console.log( "2" + "2" ) // "22"
-console.log( '1' + 2 ); // "12"
-console.log(2 + 2 + '1' ); // "41" and not "221"
-console.log('1' + 2 + 2); // "122" and not "14"
-```
-
-The binary `+` is the only operator that supports strings in such a way. Other arithmetic operators work only with numbers and always convert their operands to numbers.
-
-## addition assignment
-```js
-+=
-```
-Addition assignment
-
-## division reminder
-```js
-console.log(5 % 2); // 1
-```
-
-## exponentation
-```js
-console.log(2**8); //2^8 = 256
-console.log( 4 ** (1/2) ); // 2 (power of 1/2 is the same as a square root)
-```
-
-## increment / decrement
-- the _prefix_ form `++counter` increments `counter` and returns the new value
-- the _postfix_ form `counter++` also increments `counter` but returns the _old_ value (prior to increment)
-
-## bitwise operators
-TO DO
--   AND ( `&` )
--   OR ( `|` )
--   XOR ( `^` )
--   NOT ( `~` )
--   LEFT SHIFT ( `<<` )
--   RIGHT SHIFT ( `>>` )
--   ZERO-FILL RIGHT SHIFT ( `>>>` )
-
-
-## list of all
-
-According to priority:
-
-- `++`
-- `--`
-- `-`: change number sign
-- `+` : conversion into number
-- `~`
-- `!`
-- `delete`: delete given object property
-- [[typeof]]
-- `void`
-- `**`
-- `*`, `/`, `%`
-- `+`, `-`
-- `+`: string concantenation
-- `<<`
-- `>>`
-- `>>>`
-- `<`, `<=`, `>`, `>=`: number comparison
-- `<`, `<=`, `>`, `>=`: alphabetical comparison
-- `instanceOf`: returns `true` if the object on the left is an instance of the class on the right
-- `in`: returns `true` if the value on the left is a key of the object on the right
-- `==`
-- `!=`
-- `===`
-- `!==`
-- `&`
-- `^`
-- `|`
-- `&&`
-- `||`: returns first true value in the chain
-
-```js
-let max = maxWidth || preferences.maxWidth || 500
-// it points to the first true value in chain. Unfortunately 0 is also false, so in this case the better choice will be `??` operator.
-```
-
-- `??`: returns first defined value in chain
-- `?:`
-- `=`
-- `**=`, `*=`, `/=`, `%=`, `+=`, `-=`, `&=`, `^=`, `|=`, `<<=`, `>>=`, `>>>=`
-- `,`: binary operator. It counts two values and returns the right
-
-```js
-for (let i=0,j=10; i < j; i++,j--) {
-	console.log(i+j);
-}
-```
+| precedence | symbol            | explanation                                                                       |
+| ---------- | ----------------- | --------------------------------------------------------------------------------- |
+| 17         | ` ?. ...`         | [optional chaining](optional-chaining.md)                                         |
+| &nbsp;     |                   |                                                                                   |
+| 15         | `... ++`          | postfix [increment](increment.md)                                                 |
+| 15         | `... --`          | postfix decrement                                                                 |
+| &nbsp;     |                   |                                                                                   |
+| 14         | `-`               | unary negation                                                                    |
+| 14         | `+`               | unary plus see: [type-conversion](type-conversion.md)                             |
+| 14         | `~`               | [bitwise NOT](bitwise-not)                                                        |
+| 14         | `!`               | logical NOT                                                                       |
+| 14         | `delete`          | delete given object property                                                      |
+| 14         | `typeof`          | [typeof](typeof.md)                                                               |
+| 14         | `void`            | void                                                                              |
+| 14         | ++ ...            | prefix [increment](increment.md)                                                  |
+| 14         | -- ...            | prefix decrement                                                                  |
+| &nbsp;     |                   |                                                                                   |
+| 13         | `**`              | [exponentiation](exponentiation.md)                                               |
+| &nbsp;     |                   |                                                                                   |
+| 12         | `*`               | multiplication                                                                    |
+| 12         | `/`               | division                                                                          |
+| 12         | `%`               | [division-remainder](division-remainder.md)                                       |
+| &nbsp;     |                   |                                                                                   |
+| 11         | `+`               | addition, [string-concatenation](string-concatenation.md)                         |
+| 11         | `-`               | subtraction                                                                       |
+| &nbsp      |                   |                                                                                   |
+| 10         | `<<`              | [bitwise-left-shift](bitwise-left-shift)                                          |
+| 10         | `>>`              | [bitwise-right-shift](bitwise-right-shift)                                        |
+| 10         | `>>>`             | [bitwise-unsigned-right-shift](bitwise-unsigned-right-shift)                      |
+| &nbsp;     |                   |                                                                                   |
+| 9          | `<`               | less than                                                                         |
+| 9          | `<=`              | less than or equal                                                                |
+| 9          | `>`               | greater than                                                                      |
+| 9          | `>=`              | greater than or equal                                                             |
+| 9          | `instanceOf`      | returns `true` if the object on the left is an instance of the class on the right |
+| 9          | `in`              | returns `true` if the value on the left is a key of the object on the right       |
+| &nbsp;     |                   |                                                                                   |
+| 8          | `==`              | equality                                                                          |
+| 8          | `!=`              | inequality                                                                        |
+| 8          | `===`             | strict equality                                                                   |
+| 8          | `!==`             | strict inequality                                                                 |
+| &nbsp;     |                   |                                                                                   |
+| 7          | `&`               | [bitwise-and](bitwise-and)                                                        |
+| 6          | `^`               | [bitwise-xor](bitwise-xor)                                                        |
+| 5          | `ǀ`               | [bitwise-or](bitwise-or)                                                          |
+| 4          | `&&`              | logical AND                                                                       |
+| &nbsp;     |                   |                                                                                   |
+| 3          | `ǀǀ`              | [logical-or](logical-or.md)                                                       |
+| 3          | `??`              | [nullish coalescing operator](nullish-coalescing.md)                              |
+| &nbsp;     |                   |                                                                                   |
+| 2          | `=`               | assignment                                                                        |
+| 2          | `+=`              | assignment                                                                        |
+| 2          | `-=`              | assignment                                                                        |
+| 2          | `**=`             | assignment                                                                        |
+| 2          | `*=`              | assignment                                                                        |
+| 2          | `/=`              | assignment                                                                        |
+| 2          | `%=`              | assignment                                                                        |
+| 2          | `<<=`             | assignment                                                                        |
+| 2          | `>>=`             | assignment                                                                        |
+| 2          | `>>>=`            | assignment                                                                        |
+| 2          | `&=`              | assignment                                                                        |
+| 2          | `^=`              | assignment                                                                        |
+| 2          | `|=`              | assignment                                                                        |
+| 2          | `... ? ... : ...` | [conditional ternary operator](conditional-ternary-operator.md)                   |
+| &nbsp;     |                   |                                                                                   |
+| 1          | `,`               | [comma operator](comma-operator)                                                  |

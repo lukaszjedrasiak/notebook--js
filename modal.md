@@ -1,0 +1,1 @@
+The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons, etc, until they have dealt with the window.

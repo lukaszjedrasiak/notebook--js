@@ -1,9 +1,14 @@
-[[template strings]]
+A string in js must be surrounded by quotes:
+1. double quotes: `"hello"`
+2. single quotes: `'hello'`
+3. backsticks used mainly with [template strings](template-strings)
 
 ## Properties
+
 - string.length;
 
 ## Methods
+
 - .charAt()
 - .charCodeAt()
 - [.codePointAt()](codePointAt)
@@ -32,9 +37,11 @@
 - .trimStart()
 
 ## String methods
+
 - `String.fromCodePoint(code)` – returns a character by its numeric `code`
 
 ## Character access
+
 Square bracket syntax
 ```javascript
 string[0]; //first character
