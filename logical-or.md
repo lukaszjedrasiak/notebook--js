@@ -1,4 +1,4 @@
-Returns first true value in the chain
+Returns **first** `true` value in the chain, or value of the last item.
 
 ```js
 let max = maxWidth || preferences.maxWidth || 500

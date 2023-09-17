@@ -56,7 +56,7 @@
 | 7          | `&`               | [bitwise-and](bitwise-and)                                                        |
 | 6          | `^`               | [bitwise-xor](bitwise-xor)                                                        |
 | 5          | `ǀ`               | [bitwise-or](bitwise-or)                                                          |
-| 4          | `&&`              | logical AND                                                                       |
+| 4          | `&&`              | [logical AND](logical-and)                                                                       |
 | &nbsp;     |                   |                                                                                   |
 | 3          | `ǀǀ`              | [logical-or](logical-or.md)                                                       |
 | 3          | `??`              | [nullish coalescing operator](nullish-coalescing.md)                              |

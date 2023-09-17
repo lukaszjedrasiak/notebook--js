@@ -18,3 +18,43 @@ Optional chaining can be used for functions. The syntax is `functionName?.()`
 Optional chaining **cannot** be used for assignment. It's _only_ used for **reading**
 
 **short circuit** – if the value on the left side of `?` sign is `null` or `undefined` the whole expression is `undefined` without checking the right side of it.
+
+
+## example
+
+```js
+let len = book.author.surname
+```
+
+## explicit declaration
+
+```js
+let surname = undefined;
+if (book) {
+	if (book.author) {
+		surname = book.author.surname
+	}
+}
+```
+
+## sugar syntax
+
+```js
+surname = book && book.author && book.author.surname;
+```
+
+```js
+let surname = book?.author?.surname;
+```
+
+It allows to assign default value, if the left-hand variable has `null` or `undefined` state.
+
+```javascript
+const getName = name => {
+    return name ?? "N/A";
+}
+
+console.log(getName("Sam")); // "Sam"
+console.log(getName(undefined)); // "N/A"
+console.log(getName(null)); // "N/A"
+```
